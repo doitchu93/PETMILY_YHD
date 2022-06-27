@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+
+	<comment>멤버관련 쿼리문들</comment>
+	
+	<entry key="loginMember">
+	
+		SELECT 
+				USER_NO, 
+				USER_ID, 
+				USER_PWD, 
+				USER_NAME, 
+				USER_NICKNAME, 
+				ENROLL_DATE, 
+				BIRTH_DATE, 
+				EMAIL, 
+				ADDRESS, 
+				PHONE, 
+				STATUS, 
+				CLASS
+		  FROM 
+		  		MEMBER
+		 WHERE 
+		 		USER_ID = ? 
+		   AND 
+		   		USER_PWD = ?
+		   AND 
+		   		STATUS = 'Y'
+	
+	</entry>
+	
+	<entry key="insertMember">
+	
+		INSERT 
+		  INTO 
+		       MEMBER 
+		       (
+		       USER_NO, 
+		       USER_ID, 
+		       USER_PWD, 
+		       USER_NAME, 
+		       USER_NICKNAME, 
+		       BIRTH_DATE, 
+		       EMAIL, 
+		       ADDRESS, 
+		       PHONE,
+		       CLASS
+		       )
+        VALUES 
+               (
+               SEQ_UNO.NEXTVAL, 
+               ?, 
+               ?, 
+               ?, 
+               ?, 
+               ?, 
+               ?, 
+               ?, 
+               ?,
+               ?
+               )
+
+	</entry>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+</properties>
