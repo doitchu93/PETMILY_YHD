@@ -112,32 +112,6 @@
         display: flex;
     }
 
-
-    /* enroll-member-box-content > enroll-member-form */
-    /* #enroll-member-form-label-area {
-        width: 30%;
-        height: 100%;
-        background-color: rgb(243, 243, 243);
-        font-size: 20px;
-        font-weight: bold;
-        padding-left: 30px;
-        padding-top: 30px;
-    }
-    #enroll-member-form-label-area > div {margin-bottom: 50px;}
-    #enroll-member-form-input-area {
-        width: 70%;
-        height: 100%;
-        padding-top: 23px;
-    }
-    #enroll-member-form-input-area > div {
-        margin-left: 20px;
-        margin-bottom: 37px;
-    }
-    #enroll-member-form-input-area input {
-        width: 292px;
-        height: 34px;
-    } */
-
 	/* enroll-member-box-tail */
     #enroll-member-box-tail {
         width: 340px;

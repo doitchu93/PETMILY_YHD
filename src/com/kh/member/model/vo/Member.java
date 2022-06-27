@@ -32,7 +32,7 @@ public class Member {
 		this.address = address;
 		this.phone = phone;
 	}
-	// 임시
+	// 임시로 userClass 사용, 나중에 지울 예정
 	public Member(String userId, String userPwd, String userName, String userNickname, String birthDate, String email,
 			String address, String phone, String userClass) {
 		super();

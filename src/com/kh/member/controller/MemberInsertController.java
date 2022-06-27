@@ -46,44 +46,18 @@ public class MemberInsertController extends HttpServlet {
 		
 		Member m = new Member(userId, userPwd, userName, userNickname, birthDate, email, address, phone, userClass);
 		
-		System.out.println(userId);
 		int result = new MemberService().insertMember(m);
 		
 		if (result > 0) {
 			
-			request.getSession().setAttribute("alertMsg", "회원가입에 성공했습니다."); // 회원 가입 성공시 alertMsg에 추가
-			response.sendRedirect(request.getContextPath());
-			
+			response.sendRedirect(request.getContextPath() + "/insertFin.me");
 		} else {
 			
 			HttpSession session = request.getSession();
 			
-			session.setAttribute("alertMsg", "실패");
+			session.setAttribute("alertMsg", "회원가입 실패, 다시 시도해주세요.");
 			response.sendRedirect(request.getContextPath());
 		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 
 	/**

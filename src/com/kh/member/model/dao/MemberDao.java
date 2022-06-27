@@ -75,7 +75,7 @@ public class MemberDao {
 		String sql = prop.getProperty("insertMember");
 		
 		try {
-			System.out.println(m.getUserId());
+			
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, m.getUserId());
 			pstmt.setString(2, m.getUserPwd());
@@ -97,46 +97,5 @@ public class MemberDao {
 		System.out.println(result);
 		return result;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 }
